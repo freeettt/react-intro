@@ -1,0 +1,84 @@
+#root { 
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6, #93c5fd);
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#root:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 8em;
+  padding: 1.5em;
+  transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #2563ebaa);
+  transform: scale(1.15) rotate(7deg);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #60a5faaa);
+}
+
+.card {
+  padding: 2.5em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.read-the-docs {
+  color: #2563eb;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.read-the-docs:hover {
+  color: #1e40af;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #1e40af;
+  transform: scale(1.1);
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #93c5fd);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 8s ease infinite;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
